@@ -9,6 +9,7 @@
 import UIKit
 
 class SoLieuCoronaViewController: UIViewController {
+    let image111 = UIImageView()
     let button1: UIButton = {
         let button = UIButton()
         //button.addTarget(self, action: #selector(folder1), for: .touchUpInside)
@@ -28,7 +29,10 @@ class SoLieuCoronaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-             
+        image111.image = UIImage(named: "hoatuyet")
+        view.addSubview(image111)
+        image111.frame = CGRect(x: 0, y: 0, width: view.frame.maxX, height: view.frame.maxY)
+        image111.alpha = 0.3
         
         
         let leftBT = UIBarButtonItem(image: UIImage(named: "folder"), style: .done, target: self, action: #selector(folder1))

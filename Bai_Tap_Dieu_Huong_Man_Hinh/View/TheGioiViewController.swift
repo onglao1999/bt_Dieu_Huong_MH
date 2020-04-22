@@ -12,9 +12,9 @@ class TheGioiViewController: UIViewController {
 let image = UIImageView()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .white
          image.image = UIImage(named: "thegioi")
-               image.frame = CGRect(x: 0 ,y: 90, width: view.frame.maxX, height: view.frame.maxY)
+        image.frame = CGRect(x: 0 ,y: 90, width: view.frame.maxX, height: view.frame.maxY/1.2)
                view.addSubview(image)
     }
     
