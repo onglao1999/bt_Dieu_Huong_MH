@@ -27,7 +27,7 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.backgroundColor = .white
         view.backgroundColor = .white
-       
+        
         stImage()
         sttf1_2()
         stButton_1()
@@ -38,10 +38,11 @@ class LogInViewController: UIViewController {
         present(a,animated: false, completion: nil)
     }
     @objc func next2(){
+        
         let a = SoLieuCoronaViewController()
-        a.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(a, animated: false)
-        //present(a, animated: false, completion: nil)
+        let a1 = UINavigationController(rootViewController: a)
+        a1.modalPresentationStyle = .fullScreen
+        present(a1, animated: false, completion: nil)
     }
     func stImage(){
         image.backgroundColor = .black

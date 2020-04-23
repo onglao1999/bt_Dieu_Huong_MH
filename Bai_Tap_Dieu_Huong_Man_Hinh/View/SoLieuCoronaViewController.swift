@@ -28,7 +28,7 @@ class SoLieuCoronaViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
         image111.image = UIImage(named: "hoatuyet")
         view.addSubview(image111)
         image111.frame = CGRect(x: 0, y: 0, width: view.frame.maxX, height: view.frame.maxY)

@@ -9,16 +9,16 @@
 import UIKit
 
 class TheGioiViewController: UIViewController {
-let image = UIImageView()
+    let image = UIImageView()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-         image.image = UIImage(named: "thegioi")
+        image.image = UIImage(named: "thegioi")
         image.frame = CGRect(x: 0 ,y: 90, width: view.frame.maxX, height: view.frame.maxY/1.2)
-               view.addSubview(image)
+        view.addSubview(image)
     }
     
-
     
-
+    
+    
 }

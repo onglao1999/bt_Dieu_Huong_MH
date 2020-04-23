@@ -10,27 +10,27 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     let image = UIImageView()
-       let tf1 = UITextField()
-       let tf2 = UITextField()
-       var button = UIButton()
-       
-       var button1: UIButton = {
-           let button = UIButton()
-           button.addTarget(self, action: #selector(next1), for: .touchUpInside)
-           return button
-       }()
+    let tf1 = UITextField()
+    let tf2 = UITextField()
+    var button = UIButton()
+    
+    var button1: UIButton = {
+        let button = UIButton()
+        button.addTarget(self, action: #selector(next1), for: .touchUpInside)
+        return button
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         view.backgroundColor = .white
-               
-               stImage()
-               sttf1_2()
-               stButton_1()
+        
+        stImage()
+        sttf1_2()
+        stButton_1()
     }
     @objc func next1(){
         dismiss(animated: false, completion: nil)
-       
+        
     }
     func stImage(){
         image.backgroundColor = .black
@@ -94,15 +94,15 @@ class RegisterViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

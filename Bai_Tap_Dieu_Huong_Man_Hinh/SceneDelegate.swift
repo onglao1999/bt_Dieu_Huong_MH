@@ -30,9 +30,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let logInViewController = LogInViewController()
         
         // tạo NavigationConTroller
-        let navigation = UINavigationController(rootViewController: logInViewController)
-        
-        window?.rootViewController = navigation
+        //        let navigation = UINavigationController(rootViewController: logInViewController)
+        let solieucoronaViewController = SoLieuCoronaViewController()
+        let navigation1 = UINavigationController(rootViewController: solieucoronaViewController)
+        window?.rootViewController = logInViewController
         window?.makeKeyAndVisible()
         
         

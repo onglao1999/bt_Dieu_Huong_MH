@@ -10,18 +10,18 @@ import UIKit
 
 class BookViewController: UIViewController {
     let button: UIButton = {
-       let button = UIButton()
+        let button = UIButton()
         button.addTarget(self, action: #selector(tc1), for: .touchUpInside)
         return button
     }()
-let image = UIImageView()
+    let image = UIImageView()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         self.title = "Map Covid"
-         image.image = UIImage(named: "book")
-               image.frame = CGRect(x: 0 ,y: 100, width: view.frame.maxX, height: view.frame.maxY/3)
-               view.addSubview(image)
+        image.image = UIImage(named: "book")
+        image.frame = CGRect(x: 0 ,y: 100, width: view.frame.maxX, height: view.frame.maxY/3)
+        view.addSubview(image)
         
         //
         button.backgroundColor = .gray
@@ -40,7 +40,7 @@ let image = UIImageView()
         abc.modalPresentationStyle = .fullScreen
         self.navigationController?.popToRootViewController(animated: false)
     }
-
-   
-
+    
+    
+    
 }
